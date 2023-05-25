@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+          <img src="img/Logo.png" alt="logoAlura" class="logoAlura">
+      
+  </header>
+    <div class="container">
+      <div class="encriptar">
+        <textarea
+          class="txt_userMensaje"
+          cols="30"
+          rows="10"
+          placeholder="Ingresa el mensaje aqui"
+        ></textarea>
+
+        <div class="info">
+          <p> &#9888; Solo letras minusculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <button class="btn_encriptar" type="button" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button
+            class="btn_desencriptar"
+            type="button"
+            onclick="btnDesencriptar()"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </div>
+
+      <div class="encriptado">
+        <textarea class="txt_desencriptado" cols="30" rows="10"></textarea>
+        <img src="img/Muñeco.png" alt="No se encontro mensaje" id="imagen" />
+        <div class="mensaje_encriptado">
+          <h2 id="titulo_mensaje">Ningun mensaje encontrado</h2>
+          <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <div class="copy">
+          <button class="btn_copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+      
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
