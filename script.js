@@ -103,4 +103,8 @@ function desencriptar(messageTo){
 
 
 }
+window.addEventListener('load', function() {
+    console.log('La página ha terminado de cargarse!!');
+    encDesMessageText.value="";
+});
 
