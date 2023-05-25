@@ -222,3 +222,128 @@
       width: 52%;
       
     }
+     /* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 900px){
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    .encriptar {
+      width: 100%;
+    }
+    .txt_userMensaje {
+      width: 80%;
+      height: 40%;
+      left: 10%;
+      top: 5%;
+    }
+  .info{
+      width: 80%;
+      left: 10%;
+      top: 45%;
+    }
+    .info p {
+      font-size: 18px;
+    }
+    .botones {
+      width: 80%;
+      left: 10%;
+      top: 50%;
+     
+    }
+    .btn_encriptar,
+    .btn_desencriptar {
+      width: 48%;
+      border-radius: 16px;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 150%;
+      
+    }
+    .btn_encriptar:hover,
+    .btn_desencriptar:hover {
+      margin: 0.3%;
+      width: 47.5%;
+      
+    }
+    .encriptado {
+      width: 80%;
+      height: 35%;
+      left: 10%;
+      top: 70%;
+    }
+    .txt_desencriptado{
+      width: 100%;
+      height: 100%;
+      resize: none;
+      border:none;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+      padding-left: 6%;
+  
+    }
+    .mensaje_encriptado {
+      width: 85%;
+      top: 5%;
+    }
+    .mensaje_encriptado h2 {
+      width: 100%;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 120%;
+      text-align: center;
+      color: #343a40;
+      background: #fff;
+    }
+    .mensaje_encriptado p {
+      width: 80%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 120%;
+      text-align: center;
+      color: #495057;
+      background: #fff;
+    }
+    .encriptado img {
+      top: 0;
+      display: none;
+      visibility: hidden;
+    }
+    .copy{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 1% 0;
+      position: absolute;
+      width: 80%;
+      top: 70%;
+      background: #fff;
+    }
+    .btn_copiar {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      gap: 8px;
+      width: 95%;
+      
+      border: 1px solid #0a3871;
+      border-radius: 24px;
+      margin-left: 5%;
+      text-align: center;
+      color: #0a3871;
+      visibility: hidden;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+     
+    }
+    .btn_copiar:hover {
+      
+      width: 97%;
+      
+    }
+  }
